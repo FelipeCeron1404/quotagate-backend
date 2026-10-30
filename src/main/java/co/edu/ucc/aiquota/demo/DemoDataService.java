@@ -22,7 +22,7 @@ public class DemoDataService {
 
     private static final List<DemoConsumerProfile> DEMO_CONSUMERS = List.of(
             new DemoConsumerProfile("laura-free", "Laura Gómez", SubscriptionPlan.FREE, 12_400L, 300, 2_500),
-            new DemoConsumerProfile("mateo-free", "Mateo Rosero", SubscriptionPlan.FREE, 49_650L, 800, 3_200),
+            new DemoConsumerProfile("mateo-free", "Mateo Rosero", SubscriptionPlan.FREE, 49_880L, 800, 3_200),
             new DemoConsumerProfile("sofia-pro", "Sofía Burbano", SubscriptionPlan.PRO, 186_300L, 4_000, 15_000),
             new DemoConsumerProfile("andres-enterprise", "Andrés Erazo", SubscriptionPlan.ENTERPRISE, 1_248_900L, 20_000, 60_000)
     );
