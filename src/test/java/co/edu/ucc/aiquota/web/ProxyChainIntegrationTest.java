@@ -87,8 +87,6 @@ class ProxyChainIntegrationTest {
     void returnsPaymentRequiredWhenTheMonthlyQuotaIsExhausted() throws Exception {
         mockMvc.perform(generateAs("mateo-free").contentType(MediaType.APPLICATION_JSON).content(PROMPT_BODY))
                 .andExpect(status().isOk());
-        mockMvc.perform(generateAs("mateo-free").contentType(MediaType.APPLICATION_JSON).content(PROMPT_BODY))
-                .andExpect(status().isOk());
 
         mockMvc.perform(generateAs("mateo-free").contentType(MediaType.APPLICATION_JSON).content(PROMPT_BODY))
                 .andExpect(status().isPaymentRequired())
