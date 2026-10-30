@@ -12,9 +12,9 @@
     </parent>
 
     <groupId>co.edu.ucc</groupId>
-    <artifactId>ai-quota-proxy-backend</artifactId>
+    <artifactId>quotagate-backend</artifactId>
     <version>1.0.0</version>
-    <name>ai-quota-proxy-backend</name>
+    <name>quotagate-backend</name>
     <description>AI consumption platform protected by rate limiting and quota proxies</description>
 
     <properties>
@@ -56,7 +56,7 @@
     </dependencies>
 
     <build>
-        <finalName>ai-quota-proxy-backend</finalName>
+        <finalName>quotagate-backend</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
