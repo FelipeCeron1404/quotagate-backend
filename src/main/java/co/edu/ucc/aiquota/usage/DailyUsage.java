@@ -36,10 +36,14 @@ public class DailyUsage {
     }
 
     public DailyUsage(String consumerId, LocalDate usageDate) {
+        this(consumerId, usageDate, 0L, 0);
+    }
+
+    public DailyUsage(String consumerId, LocalDate usageDate, long tokensConsumed, int requestCount) {
         this.consumerId = consumerId;
         this.usageDate = usageDate;
-        this.tokensConsumed = 0L;
-        this.requestCount = 0;
+        this.tokensConsumed = tokensConsumed;
+        this.requestCount = requestCount;
     }
 
     public String getConsumerId() {
